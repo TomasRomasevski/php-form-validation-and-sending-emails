@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./client-side-form-validation.js" defer></script>
+</head>
+<body>
+    <div id="form-container">
+        <div id="form-section">
+            <h3>Form Example</h3>
+        <form method="post" id="castingForm" onsubmit="return validateForm()" action="form-controller.php">
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName">
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" id="" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="" min="16" max="110" required>
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="" required>
+            <label for="socialMedia">Social media link</label>
+            <input type="text" name="socialMedia" id="" required>
+            <label for="youtubeUrl">Youtube link</label>
+            <input type="url" name="youtubeUrl" id="" required>
+            <label for="aboutMe">Describe yourself</label>
+            <textarea type="text" name="aboutMe" id="about-me" rows="5" required></textarea>
+            <label for="">Check when you are free</label>
+            <div>
+                <input type="checkbox" name="month8" id="">
+                <label for="month8">3-7 August</label>
+            </div>
+            <div>
+                <input type="checkbox" name="month9" id="">
+                <label for="month9">12-16 September</label>
+            </div>
+            <div id="accept-terms">
+                <input type="checkbox" name="acceptTerms" id="" required>
+                <label for="acceptTerms">I consent to the processing of the above personal data by "example company" for the purposes of the "Example TV" program.</label>
+            </div>
+            <input id="submit-button" type="submit" name="submit" value="SUBMIT">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
