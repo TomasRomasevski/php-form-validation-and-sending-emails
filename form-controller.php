@@ -1,6 +1,6 @@
 <?php
 $errors = '';
-$myEmail = 'no-reply@example.com';
+$myEmail = '1@example.com';
 
 //Checks if input fields are not empty. If at least one field is empty, puts value into $errors variable
 if (empty($_POST['firstName'])  || 
@@ -90,7 +90,7 @@ if( empty($errors)){
     $headers_for_client = 'MIME-Version: 1.0' . "\r\n";
     $headers_for_client .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
     $headers_for_client .= 'From: ' . "no-reply@example.com" ."\r\n";
-    $headers_for_client .= 'Reply-To: ' . "info@example3.com" . "\r\n" .
+    $headers_for_client .= 'Reply-To: ' . "3@example.com" . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
     mail($to_client,$email_subject_for_client,$email_body_for_client,$headers_for_client);
 
